@@ -1,12 +1,12 @@
 #!/bin/bash
 set -ex
 
-baseurl="https://f5networks.github.io/charts/"
+baseurl="https://tsomanchi.github.io/f5charts"
 to_index=(incubator stable)
 
 curdir=$(basename $(pwd))
 
-if [ $curdir != "charts" ]; then
+if [ $curdir != "f5charts" ]; then
   echo "[ERROR]  Re-index tool expects to be run from repo base directory."
   exit 1
 fi
