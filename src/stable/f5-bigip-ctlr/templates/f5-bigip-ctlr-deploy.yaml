@@ -35,7 +35,7 @@ spec:
 {{- end }}
       containers:
       - name: {{ template "f5-bigip-ctlr.name" . }}
-        image: "{{ .Values.image.user }}/{{ .Values.image.repo }}:{{ .Values.image.tag }}"
+        image: "{{ .Values.image.user }}/{{ .Values.image.repo }}:{{ .Values.version }}"
 {{- if .Values.bigip_login_secret }}
         env:
           - name: BIGIP_USERNAME
